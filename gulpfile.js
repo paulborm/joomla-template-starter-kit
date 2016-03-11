@@ -37,7 +37,7 @@ gulp.task('scripts', function(){
 
 gulp.task('build', ['styles', 'scripts']);
 
-gulp.task('default', ['build', 'browser-sync'], function(){
+gulp.task('default', ['build'], function(){
   gulp.watch("scss/**/*.scss", ['styles']);
   gulp.watch("js/**/*.js", ['scripts']);
 });
