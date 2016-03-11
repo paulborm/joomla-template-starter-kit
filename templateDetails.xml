@@ -35,8 +35,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="" class="" type="" default="" label="" description="" />
-                
+            
                 <field name="googleFont"
 					type="radio"
 					class="btn-group btn-group-yesno"
@@ -47,6 +46,10 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+                
+                <field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="Google Font Name"
+					description="What's the name of the Font you want to include?" />
                 
 			</fieldset>
 		</fields>
