@@ -24,15 +24,13 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-  return gulp.src(['js/vendors/*.js', 'js/*.js'])
+  return gulp.src(['js/plugins/*.js', 'js/template.js'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
         this.emit('end');
     }}))
-    .pipe(concat('template.js'))
-    .pipe(gulp.dest('js/'))
-    .pipe(rename({suffix: '.min'}))
+    .pipe(concat('template.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('js/'))
 });
