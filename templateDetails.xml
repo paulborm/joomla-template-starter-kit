@@ -35,13 +35,13 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-            
+                
                 <field name="googleFont"
 					type="radio"
 					class="btn-group btn-group-yesno"
 					default="1"
-					label="TPL_PROTOSTAR_FONT_LABEL"
-					description="TPL_PROTOSTAR_FONT_DESC"
+					label="Use Google Fonts"
+					description="Do you want to use Google Fonts?"
 				>
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
@@ -50,6 +50,21 @@
                 <field name="googleFontName" class="" type="text" default="Open+Sans"
 					label="Google Font Name"
 					description="What's the name of the Font you want to include?" />
+                    
+                <field name="googleAnalytics"
+                    type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="Use Google Analytics"
+					description="Do you want to use Google Analytics?"
+                >
+                    <option value="1">JYES</option>
+					<option value="0">JNO</option>
+                </field>
+                
+                <field name="googleAnalyticsTrackingCode" class="" type="text" default=""
+					label="Google Analytics Code"
+					description="What's your Google Analytics Tracking Code? Exapmle: UA-XXXXXXXX-X" />
                 
 			</fieldset>
 		</fields>
