@@ -21,5 +21,8 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 
     <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
         
+        <jdoc:include type="message" />
+        <jdoc:include type="component" />
+        
     </body>
 </html>
