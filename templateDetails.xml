@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
-<extension version="3.1" type="template" client="site">
+<extension version="3.1" type="template" client="site" method="upgrade">
 	<name>joomla-template-starter-kit</name>
-	<version>1.0</version>
-	<creationDate>11/3/2016</creationDate>
-	<author>Paul Borm</author>
-	<authorEmail>info@paulborm.de</authorEmail>
+	<version>1.0.0</version>
+	<creationDate></creationDate>
+	<author></author>
+	<authorEmail></authorEmail>
+    <authorUrl></authorUrl>
 	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
 	<description></description>
     
