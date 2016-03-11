@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>joomla-template-starter-kit</name>
+	<version>1.0</version>
+	<creationDate>11/3/2016</creationDate>
+	<author>Paul Borm</author>
+	<authorEmail>info@paulborm.de</authorEmail>
+	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description></description>
+    
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+		<filename>README.md</filename>
+		<filename>package.json</filename>
+		<filename>gulpfile.js</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>logic.php</filename>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+    
+	<positions>
+		<position></position>
+	</positions>
+    
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="" class="" type="" default="" label="" description="" />
+                
+                <field name="googleFont"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="TPL_PROTOSTAR_FONT_LABEL"
+					description="TPL_PROTOSTAR_FONT_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+			</fieldset>
+		</fields>
+	</config>
+</extension>
