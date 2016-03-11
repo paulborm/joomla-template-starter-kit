@@ -9,7 +9,7 @@ var minifycss       = require('gulp-minify-css');
 var sass            = require('gulp-sass');
 
 gulp.task('styles', function(){
-  gulp.src(['scss/**/*.scss'])
+  gulp.src(['scss/template.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
