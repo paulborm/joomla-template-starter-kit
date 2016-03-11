@@ -5,7 +5,6 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">  
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <jdoc:include type="head" />
         
         <?php // Use of Google Font ?>
