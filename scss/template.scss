@@ -1,10 +1,11 @@
 //plugins
-//@import "plugins/sassline/style";
+@import "plugins/uikit/uikit-variables";
+@import "plugins/uikit/uikit-mixins";
+@import "plugins/uikit/uikit";
 
 //base
 @import "base/variables";
 @import "base/global";
-@import "base/typo";
 
 //modules
 
