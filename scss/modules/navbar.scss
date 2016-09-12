@@ -1,0 +1,93 @@
+.navbar {
+	position: relative;
+	z-index: 999;
+	width: 100%;
+    padding: 1.5rem 0 2.5rem 0;
+    background: $color-brand;
+    box-shadow: 0 0.3rem 2.5rem rgba(0,0,0,0.15);
+
+    @media (max-width: $breakpoint-large) {
+        font-size: 1.4rem;
+    }
+
+    &:after {
+        content: none;
+    }
+
+    .nav {
+        @extend .uk-navbar-nav;
+        text-transform: none;
+
+        li {
+            margin-right: 3.5rem;
+            padding: 0;
+            outline: none;
+            line-height: 5rem;
+
+            @media (max-width: $breakpoint-xlarge) {
+                margin-right: 1.5em;
+            }
+
+            &:hover > a,
+            > a:active,
+            > a:focus {
+                background: none;
+                color: white;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                position: relative;
+                display: inline-block;
+                font-family: $font-family;
+                font-weight: $font-weight-regular;
+                font-size: 1.4rem;
+                color: darken(white, 15%);
+                height: auto;
+                background: none;
+                padding: 0;
+                text-decoration: none;
+            }
+
+            &.active,
+            &.current {
+                @extend .uk-active;
+
+                & > a {
+                    font-weight: $font-weight-bold;
+                    color: white;
+                    background: none;
+
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__inner {
+        height: 5rem;
+
+        &:after {
+            content: none;
+        }
+    }
+
+    &__items {
+        float: right;
+        padding-top: 0.5rem;
+    }
+
+    &__logo {
+        float: left;
+
+        img {
+            max-height: 5rem;
+        }        
+    }
+
+}
