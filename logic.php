@@ -31,3 +31,11 @@ JHtml::_('jquery.framework');
 $doc->addScript($tpath.'/js/template.min.js');
 
 // Template Parameters
+
+// Logo file or site title param
+if ($this->params->get('logoFile'))
+{
+	$logo = '<img src="' . JUri::root() . $this->params->get('logoFile') . '" class="my-logo" alt="Logo" />';
+} else {
+    $logo = "";
+}
