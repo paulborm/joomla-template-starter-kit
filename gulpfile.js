@@ -16,7 +16,8 @@ var sass            = require('gulp-sass');
 
 //  1. Styles
 //  1.2. Styles Editor
-//  2. Scripts
+//  2 Scripts
+//  2.1 Scripts Plugins
 //  3. Build
 //  4. Default (Build then Serve)
 
@@ -93,6 +94,30 @@ gulp.task('scripts', function(){
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('js/'))
+});
+
+
+
+
+
+
+/*#####################################################################*/
+/*#######                 2.1 SCRIPTS Plugins                   #######*/
+/*#####################################################################*/
+/*-------------- Scripte have to be implementet manually --------------*/
+
+gulp.task('scripts-plugins', function(){
+  return gulp.src([
+    // Plugin files from js/plugins/**/*
+    ])
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.log(error.message);
+        this.emit('end');
+    }}))
+    .pipe(concat('plugins.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('js/plugins/'))
 });
 
 
